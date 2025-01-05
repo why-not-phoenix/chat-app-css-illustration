@@ -333,14 +333,25 @@ input[type="radio"] {
 /* BACKGROUND                */
 /* ------------------------- */
 
-body::before,
-body::after {
+body > div {
+    position: relative;
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+body > div::before,
+body > div::after {
     content: '';
     position: absolute;
     z-index: -9999;
 }
 
-body::before {
+body > div::before {
     width: 500px;
     height: 700px;
     top: clamp(-200px, -230px + 7.9vw, 0px);
@@ -350,13 +361,13 @@ body::before {
 }
 
 @media (min-width: 900px) {
-    body::before {
+    body > div::before {
         top: 0;
         left: -80px;
         left: clamp(-200px, -150px + 5vw, -80px);
     }
 
-    body::after { 
+    body > div::after { 
         width: 500px;
         height: 700px;
         bottom: 0;
@@ -524,11 +535,7 @@ header h1 {
 }
 
 @media (min-width: 900px) {
-    body {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+    
 
     .container {
         min-width: 100vw;

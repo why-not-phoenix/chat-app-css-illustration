@@ -14,9 +14,6 @@ This is a solution to the [Chat app CSS illustration challenge on Frontend Mento
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -35,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/why-not-phoenix/chat-app-css-illustration](https://github.com/why-not-phoenix/chat-app-css-illustration)
+- Live Site URL: [https://why-not-phoenix.github.io/chat-app-css-illustration/](https://why-not-phoenix.github.io/chat-app-css-illustration/)
 
 ## My process
 
@@ -53,6 +50,17 @@ This is by far the most frustrating part of this project for me. Why does the ov
 
 ```css
 body::after {
+  bottom: 0;
+  right: -170px;
+  background-color: hsl(var(--violet-lg));
+  border-radius: 250px 250px 0 0;
+}
+```
+
+UPDATE: SOLVED BY ADDING A CONTAINER AFTER THE BODY AND USING THAT TO SET MY BEFORE AND AFTER(thanks to https://github.com/alexproman), open to other solutions:
+
+```css
+body > div::after {
   bottom: 0;
   right: -170px;
   background-color: hsl(var(--violet-lg));
