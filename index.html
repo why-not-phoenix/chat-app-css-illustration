@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- Font links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+  <!-- Custom stylesheet -->
+   <link rel="stylesheet" href="styles.css">
+  
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+</head>
+
+
+<body>
+  <div class="container">
+    <header>
+      <h1 class="text-violet-vd fs-4 fw-3">Simple booking</h1>
+      <p class="text-violet-g fw-1">Stay in touch with our dog walkers through the chat interface. This makes it easy to 
+        discuss arrangements and make bookings. Once the walk has been completed you can rate 
+        your walker and book again all through the chat.</p>
+    </header>
+    <main class="mobile">
+      <div class="mobile__inner bg-violet-lg">
+        <div class="mobile__inner__profile-box bg-gradient-vm">
+          <div class="profile-box__contents d-flex">
+            <div class="profile-box__contents__left d-flex">
+              <div class="arrow-left">
+                <a href="#"><span class="sr-only">previous page button</span></a>
+              </div>
+              <div>
+                <img src="images/avatar.jpg" alt="dog walker">
+              </div>
+              <div>
+                <h2 class="text-white fs-2 fw-2">Samuel Green</h2>
+                <p class="text-violet-p fs-1">Available to Walk</p>
+              </div>
+            </div>
+            <button type="button" class="menu-button" aria-labelledby="menuButtonLabel">
+              <span class="menu-button__line">
+                <span id="menuButtonLabel" class="sr-only">Menu Button</span>
+              </span>
+            </button>
+            </div>
+        </div>
+        <div class="mobile__inner__chat-box d-flex d-flex--col">
+  
+          <p class="chat chat--left bg-chat-box text-violet-m fs-1">That sounds great. I’d be happy with that.</p>
+          <p class="chat chat--left bg-chat-box text-violet-m fs-1">Could you send over some pictures of your dog, please?</p>
+  
+          <div class="chat-pics chat--right d-flex">
+            <img src="images/dog-image-1.jpg" alt="dog 1">
+            <img src="images/dog-image-2.jpg" alt="dog 2">
+            <img src="images/dog-image-3.jpg" alt="dog 3">
+          </div>
+          <p class="chat chat--right text-violet-d fs-1 fs-1">Here are a few pictures. She’s a happy girl!</p>
+          <p class="chat chat--right text-violet-d fs-1">Can you make it?</p>
+  
+          <p class="chat chat--left bg-chat-box text-violet-m fs-1">She looks so happy! The time we discussed works.
+             How long shall I take her out for?</p>
+  
+          <div class="radio-box chat--left d-flex bg-gradient-mv fs-1">
+            <div class="d-flex">
+              <input id="min-30" type="radio" name="radio">
+              <label for="min-30">30 minute walk</label>
+            </div>
+            <span class="fs-2 fw-3 text-white">$29</span>
+          </div>
+          <div class="radio-box chat--left d-flex bg-gradient-mv fs-1">
+            <div class="d-flex">
+              <input id="hr-1" type="radio" name="radio">
+              <label for="hr-1">1 hour walk</label>
+            </div>
+            <span class="fs-2 fw-3 text-white">$49</span>
+          </div>
+  
+          <div class="chat-window d-flex fs-1">
+            <p class="text-blue-g">Type a message…</p>
+            <div class="submit d-flex bg-violet-vd">
+              <div class="arrow-right"><span class="sr-only">submit button</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      </div>
+  
+    </main>
+  </div>  
+  
+  <div class="attribution bg-gradient-vm text-white">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="text-blue-g">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/why-not-phoenix" class="text-blue-g">Dominion (why-not-phoenix)</a>.
+  </div>
+</body>
+</html>
